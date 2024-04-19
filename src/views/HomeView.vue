@@ -5,7 +5,6 @@ const navTitle = 'Learning how to vue'
 </script>
 
 <template>
-  <main>
-    <NavBar :navBarTitle="navTitle" />
-  </main>
+  Hello
+  <NavBar :navBarTitle="navTitle" />
 </template>

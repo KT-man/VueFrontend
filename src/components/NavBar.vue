@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue'
-const props = defineProps({
-  navBarTitle: String
-})
-
-console.log(props.navBarTitle)
+const navigationLinks = [
+  { label: 'Home', link: '/', id: 'home' },
+  { label: 'About', link: '/about', id: 'about' },
+  { label: 'Publications', link: '/publications', id: ' publications' },
+  { label: 'The Pond', link: '/thepond', id: 'thepond' }
+]
 </script>
 
 <template>
-  <v-layout>
-    <v-app-bar location="top">
-      <v-app-bar-title>{{ props.navBarTitle }}</v-app-bar-title>
-    </v-app-bar>
-  </v-layout>
+  <v-navigation-drawer location="top">
+    <div class="d-flex flex-row">
+      <v-list-item v-for="link in navigationLinks" :key="link.id">{{ link.label }}</v-list-item>
+    </div>
+  </v-navigation-drawer>
 </template>
 
 <style scoped></style>
