@@ -8,11 +8,15 @@ const navigationLinks = [
 </script>
 
 <template>
-  <v-navigation-drawer location="top">
+  <v-navigation-drawer location="top" style="height: auto">
     <div class="d-flex flex-row">
       <v-list-item v-for="link in navigationLinks" :key="link.id">{{ link.label }}</v-list-item>
     </div>
   </v-navigation-drawer>
 </template>
 
-<style scoped></style>
+<style scoped>
+#navigation {
+  height: auto;
+}
+</style>
