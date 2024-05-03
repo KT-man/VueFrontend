@@ -1,10 +1,3 @@
-<script setup lang="ts">
-import NavBar from '../components/NavBar.vue'
+<script setup lang="ts"></script>
 
-const navTitle = 'Learning how to vue'
-</script>
-
-<template>
-  Hello
-  <NavBar :navBarTitle="navTitle" />
-</template>
+<template>Hello asdasd asd asd asdas da</template>
