@@ -6,6 +6,6 @@
 
 <style scoped>
 .v-footer {
-  background-color: rgb(var(--v-theme-dark-1));
+  background-color: rgb(var(--v-theme-secondary));
 }
 </style>

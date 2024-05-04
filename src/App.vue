@@ -13,12 +13,15 @@ const navTitle = 'Learning how to vue'
       <v-main>
         <RouterView></RouterView>
       </v-main>
-      <v-footer height="auto"></v-footer>
+      <FooterBar></FooterBar>
     </v-theme-provider>
   </v-app>
 </template>
 
 <style scoped>
+.v-main {
+  margin-top: 40px;
+}
 /* header {
   line-height: 1.5;
   max-height: 100vh;

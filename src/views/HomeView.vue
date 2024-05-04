@@ -1,3 +1,5 @@
 <script setup lang="ts"></script>
 
-<template></template>
+<template><div data-testid="HomeView">HiHi</div></template>
+
+<style scoped></style>
