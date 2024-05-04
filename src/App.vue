@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import NavBar from './components/NavBar.vue'
+import NavBar from './components/LayoutComponents/NavBar.vue'
+import FooterBar from './components/LayoutComponents/FooterBar.vue'
 
 const navTitle = 'Learning how to vue'
 </script>
@@ -8,10 +9,11 @@ const navTitle = 'Learning how to vue'
 <template>
   <v-app>
     <v-theme-provider>
-      <nav>
-        <NavBar :navBarTitle="navTitle" />
-      </nav>
-      <RouterView />
+      <NavBar :navBarTitle="navTitle" />
+      <v-main>
+        <RouterView></RouterView>
+      </v-main>
+      <v-footer height="auto"></v-footer>
     </v-theme-provider>
   </v-app>
 </template>

@@ -8,7 +8,7 @@ const navigationLinks = [
 </script>
 
 <template>
-  <v-navigation-drawer location="top" style="height: auto" mobile-breakpoint="xs">
+  <v-navigation-drawer location="top" mobile-breakpoint="xs" width="auto">
     <div class="navigation-container">
       <v-list-item v-for="link in navigationLinks" :key="link.id" :to="link.link">{{
         link.label
@@ -20,9 +20,11 @@ const navigationLinks = [
 <style scoped>
 .v-navigation-drawer {
   height: auto;
-  background-color: rgb(var(--v-theme-primary));
 }
 
+.v-navigation-drawer {
+  background-color: rgba(var(--v-theme-secondary));
+}
 .navigation-container {
   display: flex;
   justify-content: center;
