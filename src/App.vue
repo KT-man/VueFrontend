@@ -20,7 +20,12 @@ const navTitle = 'Learning how to vue'
 
 <style scoped>
 .v-main {
-  margin-top: 40px;
+  /* margin top to account for navBar height + padding  */
+  margin-top: 56px;
+  background-color: rgba(var(--v-theme-secondary, 0.4));
+}
+.v-footer {
+  padding: 16px;
 }
 /* header {
   line-height: 1.5;

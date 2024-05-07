@@ -6,8 +6,9 @@ import * as directives from 'vuetify/directives'
 const customTheme: ThemeDefinition = {
   colors: {
     primary: '#335C81',
-    surface: '#FCF7F8',
-    secondary: '#78CDD7',
+    'surface-light': '#FAFFFD',
+    'surface-dark': '#EDF5F7',
+    secondary: '#D4FBFF',
     info: '#274060',
     warning: '#1B2845'
   }
