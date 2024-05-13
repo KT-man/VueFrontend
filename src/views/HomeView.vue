@@ -15,7 +15,7 @@ div {
 }
 
 .v-container {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
 </style>
