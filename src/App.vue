@@ -19,6 +19,10 @@ const navTitle = 'Learning how to vue'
 </template>
 
 <style scoped>
+.v-app {
+  font-family: Garamond, 'Times New Roman', serif;
+}
+
 .v-main {
   /* margin top to account for navBar height + padding  */
   margin-top: 56px;

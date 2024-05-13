@@ -1,4 +1,5 @@
 import { createVuetify, type ThemeDefinition } from 'vuetify'
+import '@/styles/main.scss'
 
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
@@ -15,7 +16,14 @@ const customTheme: ThemeDefinition = {
 }
 
 export default createVuetify({
-  components,
+  components: {
+    ...components,
+    VContainer: {
+      ...components.VContainer,
+      'border-top': 'none',
+      'border-width': 'none'
+    }
+  },
   directives,
   theme: {
     defaultTheme: 'customTheme',

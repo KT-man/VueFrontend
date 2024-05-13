@@ -2,24 +2,20 @@
 
 <template>
   <v-container fluid>
-    <v-row no-gutters>
-      <v-col md-6>
-        <v-card>tes</v-card>
-      </v-col>
-      <v-col md-6>
-        <v-card>tes</v-card>
-      </v-col>
-    </v-row>
+    <v-col md-6>
+      <v-card>
+        <v-card-text>Hello</v-card-text>
+      </v-card>
+    </v-col>
   </v-container>
 </template>
 
 <style scoped>
 div {
-  border-top: 50px;
-  border-width: 50px;
 }
 
 .v-container {
-  padding: 0;
+  width: 1200px;
+  margin: 0 auto;
 }
 </style>
