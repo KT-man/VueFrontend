@@ -3,6 +3,7 @@
 <template>
   <v-container fluid>
     <v-col md-6>
+      <v-img src=""></v-img>
       <v-card>
         <v-card-text>Hello</v-card-text>
       </v-card>
